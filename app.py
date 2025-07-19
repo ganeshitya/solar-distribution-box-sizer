@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from fpdf import FPDF
+from fpdf2 import FPDF
 
 st.set_page_config(page_title="Solar Distribution Box Sizing Tool", layout="centered")
 
