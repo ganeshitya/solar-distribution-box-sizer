@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Solar Distribution Box Sizing Tool", layout="centered")
 
-st.title("🔌 Solar Distribution Box Sizing Tool")
+st.title("Solar Distribution Box Sizing Tool")
 st.subheader("Professional Sizing Guide for Rooftop Solar Installations")
 
 st.markdown("""
@@ -12,7 +12,7 @@ based on your inverter and panel configurations.
 It is recommended for residential rooftop systems.
 """)
 
-st.header("📟 Input Parameters")
+st.header("Input Parameters")
 
 # User Inputs
 inverter_rating = st.number_input("Inverter Capacity (kW)", min_value=0.5, max_value=100.0, value=3.0, step=0.5)
@@ -65,11 +65,11 @@ acdb_data = {
 }
 
 # Display Tables
-st.subheader("📋 DC Distribution Box (DCDB)")
+st.subheader("DC Distribution Box (DCDB)")
 st.dataframe(pd.DataFrame(dcdb_data), use_container_width=True)
 
-st.subheader("📋 AC Distribution Box (ACDB)")
+st.subheader("AC Distribution Box (ACDB)")
 st.dataframe(pd.DataFrame(acdb_data), use_container_width=True)
 
 st.markdown("---")
-st.markdown("Made with ❤️ by **Ganesh Moorthi** | [Visit My Medium](https://medium.com/@ganeshitya)")
+st.markdown("Made by **Ganesh Moorthi** | [Visit My Medium](https://medium.com/@ganeshitya)")
